@@ -134,3 +134,37 @@ function bmiCalculator (weight, height) {
 
         let names=["Angela","Ben","Jenny","Michael","Chloe"] ;
         console.log(whosPaying(names));
+
+//Fibonacci series
+        function fibonacciGenerator (n) {
+            //Do NOT change any of the code above 👆
+                
+                //Write your code here:
+                let sequence=[];
+                let sum=0;
+                if(n===1)
+                 sequence.push(0);
+                 else if(n===2)
+                 {
+                 sequence.push(0);
+                 sequence.push(1);
+                 }
+                 else
+                 {
+                      sequence.push(0);
+                     sequence.push(1);
+                    for(let i=2;i<n;i++)
+                    {
+                        sum=sequence[i-1]+sequence[i-2];
+                        sequence.push(sum);
+                    }
+                }
+
+                return sequence;
+                
+                //Return an array of fibonacci numbers starting from 0.
+                
+            //Do NOT change any of the code below 👇
+            }
+            console.log(fibonacciGenerator(6));
+            
